@@ -74,8 +74,17 @@ After creating the project to add the database connection
 
 ```bash
 $ yarn add prisma
+$ yarn add @prisma/client
 $ npx prisma init
+# After creating the models
+$ npx prisma db push
 ```
+
+## Rules
+
+- The api-endpoints names should be in plural form (e.g. Users)
+- The models names should be in singular form and Pascal casing (SomethingLike)
+- Model's properties should be snake case (something_like_this)
 
 ## License
 
